@@ -13,11 +13,11 @@ public class Usuario {
         this.email = email;
     }
 
-    public String darNombre(){
+    public String getNombre(){
         return this.nombre;
     }
 
-    public String darEmail(){
+    public String getEmail(){
         return this.email;
     }
 

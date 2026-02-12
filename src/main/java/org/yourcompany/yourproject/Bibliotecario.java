@@ -7,7 +7,7 @@ public class Bibliotecario extends Usuario {
         this.turno = turno;
     }
 
-    public String darTurno(){
+    public String getTurno(){
         return this.turno;
     }
 }

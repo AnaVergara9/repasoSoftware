@@ -8,19 +8,21 @@ public class Biblioteca {
 
     public Biblioteca (){}
 
-    public ArrayList<Socio> darSocios(){
+    public ArrayList<Socio> getSocios() {
         return socios;
     }
 
-    public ArrayList<Bibliotecario> darBibliotecario(){
+    public ArrayList<Bibliotecario> getBibliotecarios() {
         return bibliotecarios;
     }
 
-    public void AgregarSocio(Socio socio){
+    public void addSocio(Socio socio){
         socios.add(socio);
     }
 
-    public void AgregarBibliotecario(Bibliotecario bibliotecario){
+    public void addBibliotecario(Bibliotecario bibliotecario){
         bibliotecarios.add(bibliotecario);
     }
+
+
 }

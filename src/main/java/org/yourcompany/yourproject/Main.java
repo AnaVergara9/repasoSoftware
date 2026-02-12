@@ -10,8 +10,10 @@ package org.yourcompany.yourproject;
  */
 public class Main {
     public static void main (String[]args){
+        Biblioteca biblioteca = new Biblioteca();
+
         Bibliotecario bibliotecario = new Bibliotecario("1", "pepe","pepe@gmail.com","Mañana");
-        System.out.println(bibliotecario.darEmail());
+        System.out.println(bibliotecario.getEmail());
 
         Socio socio = new Socio("2","Juan","juan@gmail.com",5);
         socio.registrarPrestamo(2);
