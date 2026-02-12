@@ -13,10 +13,14 @@ public class Main {
         Biblioteca biblioteca = new Biblioteca();
 
         Bibliotecario bibliotecario = new Bibliotecario("1", "pepe","pepe@gmail.com","Mañana");
-        System.out.println(bibliotecario.getEmail());
+
+        biblioteca.addBibliotecario(bibliotecario);
 
         Socio socio = new Socio("2","Juan","juan@gmail.com",5);
-        socio.registrarPrestamo(2);
+
+        biblioteca.addSocio(socio);
+
+        System.out.println(biblioteca.getSocios().get(0).getNombre());
     }
 
 }
