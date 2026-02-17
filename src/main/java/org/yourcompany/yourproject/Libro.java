@@ -19,5 +19,7 @@ public class Libro {
 
     public Ejemplar crearEjemplar(String codigo){
         Ejemplar ejemplar = new Ejemplar(codigo,this);
+
+        return ejemplar;
     }
 }
