@@ -13,6 +13,7 @@ public class Libro {
         this.ejemplares =new ArrayList<>();
     }
 
+
     public String getTitulo() {
         return titulo;
     }
