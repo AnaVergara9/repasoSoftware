@@ -13,13 +13,27 @@ public class Socio extends Usuario{
     }
 
     public void registrarPrestamo(int cantidad){
-        if (cantidad > limiteEjemplares){
-            throw new IllegalArgumentException("Supera el limite del socio");
+        boolean b = puedePedirPrestamo(cantidad);
+        if (b == false){
+            throw new IllegalArgumentException("No puede pedir un Prestamo");
+        }else{
+            ejemplaresEnPrestamo= ejemplaresEnPrestamo + cantidad;
+            System.out.println("Tiene en prestamo "+ ejemplaresEnPrestamo +" libros" );
         }
-        if (multasPendientes>0){
-            throw new IllegalArgumentException("No puede pedir si tiene una multa");
-        }
-        System.out.println("Se prestaron "+ cantidad +" libros" );
     }
+
+    public boolean puedePedirPrestamo (int cantidad){
+        if (cantidad > limiteEjemplares || multasPendientes > 0){
+            return false;
+        }else {
+            return true;
+        }
+    }
+
+    public void agregarMulta (double monto){
+        multasPendientes = multasPendientes + monto;
+    }
+
+
 
 }

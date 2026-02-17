@@ -20,6 +20,12 @@ public class Main {
 
         biblioteca.addSocio(socio);
 
+        Libro libro = new Libro("1345","Fundamentos");
+
+        biblioteca.addLibro(libro);
+
+        libro.crearEjemplar("E001");
+
         System.out.println(biblioteca.getSocios().get(0).getNombre());
     }
 
