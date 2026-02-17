@@ -22,4 +22,10 @@ public class Socio extends Usuario{
         System.out.println("Se prestaron "+ cantidad +" libros" );
     }
 
+    public boolean puedePedirPrestamo (int cantidad){
+
+    }
+
+
+
 }
